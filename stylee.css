@@ -1,0 +1,95 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+main {
+    padding: 30px;
+}
+
+/* Contenedor para la caja absolute */
+.contenedor {
+    position: relative;
+    height: 300px;
+    border: 2px solid #333;
+    background-color: white;
+    margin-bottom: 30px;
+}
+
+/* Caja 1 - Relative */
+.caja1 {
+    position: relative;
+    top: 30px;
+    left: 30px;
+    background-color: lightblue;
+}
+
+/* Caja 2 - Absolute */
+.caja2 {
+    position: absolute;
+    top: 80px;
+    left: 200px;
+    background-color: lightgreen;
+    z-index: 10;
+}
+
+/* Caja 3 - Fixed */
+.caja3 {
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: lightcoral;
+    z-index: 5;
+}
+
+/* Caja 4 - Sticky */
+.caja4 {
+    position: sticky;
+    top: 0;
+    background-color: gold;
+    z-index: 4;
+}
+
+/* Estilo general de las cajas */
+.caja {
+    width: 220px;
+    padding: 20px;
+    margin: 10px;
+    border: 2px solid #222;
+    border-radius: 8px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Contenido para generar scroll */
+.contenido {
+    background-color: white;
+    padding: 25px;
+    margin-top: 20px;
+    line-height: 1.8;
+    min-height: 1200px;
+}
+
+.contenido p {
+    margin-bottom: 40px;
+}
+
+/* Pie de página */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
